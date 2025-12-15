@@ -1,0 +1,50 @@
+
+Machine learning and deep learning techniques with Convolutional Neural Networks (CNNs) being one of the most popular methods for recognizing patterns in images
+
+Models (Classifiers):
+VGG-16
+ResNet18
+EfficientNet
+(AlexNet)
+
+Model(Object Detector):
+YOLO
+
+Extra things:
+Confusion matrix			[IMPORTANT]
+Deep Learning Data Processing
+max-pooling layer
+
+Metrics:
+
+1)  Recall
+2)  Precision
+3)  Accuracy
+4)  AUC
+5)  F1-Score
+6)  Recall
+7)  Symmetric Balanced Accuracy
+8)  Mean Average Precision
+9)  average precision (AP)  			--> RAMP-CNN: A Novel Neural Network for Enhanced Automotive Radar Object Recognition
+10) average recall (AR)				--> RAMP-CNN: A Novel Neural Network for Enhanced Automotive Radar Object Recognition
+
+[https://www.geeksforgeeks.org/computer-vision/what-is-image-recognition/]
+[https://www.geeksforgeeks.org/machine-learning/yolo-v2-object-detection/]
+[https://www.geeksforgeeks.org/computer-vision/how-single-shot-detector-ssd-works/]
+[https://www.geeksforgeeks.org/machine-learning/faster-r-cnn-ml/]
+[https://www.geeksforgeeks.org/computer-vision/vision-transformers-vit-in-image-recognition/]
+[https://www.geeksforgeeks.org/machine-learning/best-image-processing-tools-used-in-machine-learning/]
+[https://www.geeksforgeeks.org/computer-vision/vgg-16-cnn-model/]
+[https://www.geeksforgeeks.org/computer-vision/computer-vision/]
+[https://www.geeksforgeeks.org/deep-learning/getting-started-with-pytorch/]					--PyTorch
+
+
+[https://ieee-dataport.org/documents/raw-adc-data-77ghz-mmwave-radar-automotive-object-detection]     		-- The Dataset
+[https://github.com/Xiangyu-Gao/Raw_ADC_radar_dataset_for_automotive_object_detection/tree/main] 		-- Github of the Dataset
+[https://github.com/Xiangyu-Gao/Radar-multiple-perspective-object-detection]					-- Code
+
+
+[https://waymo.com/research/]					-- Waymo Papers
+[https://waymo.com/open/download/]				-- Waymo Dataset
+[https://waymo.com/open/]					-- Waymo Open Dataset
+[https://github.com/waymo-research/waymo-open-dataset]		-- Waymo Open Dataset Github
