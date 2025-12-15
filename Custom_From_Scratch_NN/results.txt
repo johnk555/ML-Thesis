@@ -1,0 +1,25 @@
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_From_Scratch_NN> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_From_Scratch_NN/train_image.py
+--- Starting Custom Training (From Scratch) on cuda ---
+Scanning dataset for valid images and labels...
+Dataset Ready. Found 16940 valid frames.
+Distribution: Person: 10883, Cyclist: 8368, Car: 6676
+Training Samples: 13552 | Validation Samples: 3388
+Epoch 1/15 | Train Loss: 0.4100 | Val Loss: 0.1637 | Val Acc: 0.9208 | Time: 622.4s
+  --> Model Saved (Improved Validation Loss)
+Epoch 2/15 | Train Loss: 0.1713 | Val Loss: 0.1430 | Val Acc: 0.9333 | Time: 414.9s
+  --> Model Saved (Improved Validation Loss)
+Epoch 3/15 | Train Loss: 0.1524 | Val Loss: 0.1193 | Val Acc: 0.9368 | Time: 395.2s
+  --> Model Saved (Improved Validation Loss)
+Epoch 4/15 | Train Loss: 0.1341 | Val Loss: 0.1039 | Val Acc: 0.9485 | Time: 402.9s
+  --> Model Saved (Improved Validation Loss)
+Epoch 5/15 | Train Loss: 0.1201 | Val Loss: 0.1015 | Val Acc: 0.9529 | Time: 406.2s
+  --> Model Saved (Improved Validation Loss)
+Epoch 6/15 | Train Loss: 0.1183 | Val Loss: 0.0952 | Val Acc: 0.9515 | Time: 403.1s
+  --> Model Saved (Improved Validation Loss)
+Epoch 7/15 | Train Loss: 0.1100 | Val Loss: 0.0802 | Val Acc: 0.9640 | Time: 404.2s
+  --> Model Saved (Improved Validation Loss)
+Epoch 8/15 | Train Loss: 0.0986 | Val Loss: 0.0806 | Val Acc: 0.9646 | Time: 402.2s
+Epoch 9/15 | Train Loss: 0.0916 | Val Loss: 0.0740 | Val Acc: 0.9620 | Time: 403.6s
+  --> Model Saved (Improved Validation Loss)
+Epoch 10/15 | Train Loss: 0.0886 | Val Loss: 0.0722 | Val Acc: 0.9636 | Time: 405.4s
+  --> Model Saved (Improved Validation Loss)

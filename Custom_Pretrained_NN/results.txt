@@ -1,0 +1,12 @@
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_NN>  & 'C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe' 'c:\Users\karel\.vscode\extensions\ms-python.debugpy-2025.16.0-win32-x64\bundled\libs\debugpy\launcher' '51198' '--' 'C:\Users\karel\Desktop\ML-Thesis\Code\Custom_NN\train_image.py' 
+--- Starting Training on cpu ---
+Scanning dataset for valid images and labels...
+Dataset Ready. Found 16940 valid frames.
+Class Distribution in Training Set: Person: 10883, Cyclist: 8368, Car: 6676
+Training Samples: 13552 | Validation Samples: 3388
+Epoch 1/10 | Train Loss: 0.1970 | Val Loss: 0.1141 | Val Acc: 0.9505 | Time: 1095.1s
+  --> Model Saved (Improved Validation Loss)
+Epoch 2/10 | Train Loss: 0.1212 | Val Loss: 0.0833 | Val Acc: 0.9658 | Time: 1016.0s
+  --> Model Saved (Improved Validation Loss)
+Epoch 3/10 | Train Loss: 0.1017 | Val Loss: 0.0726 | Val Acc: 0.9732 | Time: 1019.5s
+  --> Model Saved (Improved Validation Loss)
