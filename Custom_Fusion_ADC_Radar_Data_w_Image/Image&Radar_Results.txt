@@ -1,0 +1,27 @@
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_Fusion_ADC_Radar_Data/train_fusion.py
+--- Starting FUSION Training on cuda ---
+Scanning dataset for paired Image+Radar files...
+Fusion Dataset Ready. Found 16940 valid pairs.
+Training Samples: 13552 | Validation Samples: 3388
+Epoch 1/10 | Train Loss: 0.3820 | Val Loss: 0.1575 | Val Acc: 0.9233 | Time: 1051.5s
+  --> Model Saved
+Epoch 2/10 | Train Loss: 0.1927 | Val Loss: 0.1329 | Val Acc: 0.9445 | Time: 1066.4s
+  --> Model Saved
+Epoch 3/10 | Train Loss: 0.1834 | Val Loss: 0.1162 | Val Acc: 0.9515 | Time: 1065.4s
+  --> Model Saved
+Epoch 4/10 | Train Loss: 0.1632 | Val Loss: 0.1035 | Val Acc: 0.9573 | Time: 1048.3s
+  --> Model Saved
+Epoch 5/10 | Train Loss: 0.1387 | Val Loss: 0.0959 | Val Acc: 0.9514 | Time: 1043.8s
+  --> Model Saved
+Epoch 6/10 | Train Loss: 0.1215 | Val Loss: 0.0858 | Val Acc: 0.9622 | Time: 1071.8s
+  --> Model Saved
+Epoch 7/10 | Train Loss: 0.1041 | Val Loss: 0.0667 | Val Acc: 0.9757 | Time: 1008.4s
+  --> Model Saved
+Epoch 8/10 | Train Loss: 0.0870 | Val Loss: 0.0663 | Val Acc: 0.9706 | Time: 984.9s
+  --> Model Saved
+Epoch 9/10 | Train Loss: 0.0778 | Val Loss: 0.0538 | Val Acc: 0.9753 | Time: 957.8s
+  --> Model Saved
+Epoch 10/10 | Train Loss: 0.0717 | Val Loss: 0.0462 | Val Acc: 0.9780 | Time: 947.5s
+  --> Model Saved
+
+Fusion Training Complete.

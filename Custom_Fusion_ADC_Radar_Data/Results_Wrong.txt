@@ -1,0 +1,76 @@
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_Fusion_ADC_Radar_Data/train_radar.py
+--- Starting RADAR-ONLY Training on cuda ---
+Scanning dataset for Radar files...
+Radar Dataset Ready. Found 16940 valid samples.
+Training Samples: 13552 | Validation Samples: 3388
+Epoch 1/15 | Train Loss: 0.6746 | Val Loss: 32.9041 | Val Acc: 0.5901 | Time: 296.3s
+  --> Model Saved
+Epoch 2/15 | Train Loss: 0.6729 | Val Loss: 35.4857 | Val Acc: 0.5901 | Time: 338.0s
+Traceback (most recent call last):
+  File "c:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data\train_radar.py", line 93, in <module>
+    main()
+  File "c:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data\train_radar.py", line 46, in main
+    for radars, labels in train_loader:
+  File "C:\Users\karel\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 701, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\karel\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karel\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\karel\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataset.py", line 420, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_Fusion_ADC_Radar_Data/train_radar.py
+--- Starting RADAR-ONLY Training on cuda ---
+Scanning dataset for Radar files...
+Radar Dataset Ready. Found 16940 valid samples.
+Training Samples: 13552 | Validation Samples: 3388
+Epoch 1/15 | Train Loss: 0.6858 | Val Loss: 18.4923 | Val Acc: 0.5801 | Time: 261.6s
+  --> Model Saved
+Epoch 2/15 | Train Loss: 0.6736 | Val Loss: 26.4963 | Val Acc: 0.5801 | Time: 309.5s
+Epoch 3/15 | Train Loss: 0.6723 | Val Loss: 27.7901 | Val Acc: 0.5801 | Time: 292.4s
+Epoch 4/15 | Train Loss: 0.6722 | Val Loss: 28.0094 | Val Acc: 0.5801 | Time: 250.7s
+Epoch 5/15 | Train Loss: 0.6721 | Val Loss: 28.2049 | Val Acc: 0.5801 | Time: 238.8s
+Epoch 6/15 | Train Loss: 0.6721 | Val Loss: 27.7721 | Val Acc: 0.5801 | Time: 243.3s
+Epoch 7/15 | Train Loss: 0.6721 | Val Loss: 28.1796 | Val Acc: 0.5801 | Time: 247.8s
+Epoch 8/15 | Train Loss: 0.6720 | Val Loss: 27.9095 | Val Acc: 0.5801 | Time: 246.3s
+Epoch 9/15 | Train Loss: 0.6721 | Val Loss: 27.7342 | Val Acc: 0.5801 | Time: 244.4s
+Epoch 10/15 | Train Loss: 0.6722 | Val Loss: 27.9637 | Val Acc: 0.5801 | Time: 257.0s
+
+
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_Fusion_ADC_Radar_Data/inspect_radar.py
+--- Inspecting Radar Data ---
+Scanning dataset for Radar files...
+Radar Dataset Ready. Found 16940 valid samples.
+
+Checking sample index 0...
+Tensor Shape: torch.Size([1, 128, 128])
+Max Value: 0.0
+Min Value: 0.0
+Mean Value: 0.0
+
+❌ CRITICAL ERROR: The radar tensor is all ZEROS.
+This means the loading logic inside __getitem__ is failing and triggering the 'except' block.
+
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Custom_Fusion_ADC_Radar_Data> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Custom_Fusion_ADC_Radar_Data/debug_mat_file.py
+--- Searching for a valid .mat file in C:/Users/karel/Automotive ---
+✅ Found file: C:/Users/karel/Automotive\2019_04_09_bms1000\radar_raw_frame\000003.mat
+
+--- MATLAB FILE CONTENTS ---
+Keys found: ['__header__', '__version__', '__globals__', 'adcData']
+
+Variable: 'adcData'
+   Shape: (128, 255, 4, 2)
+   Type:  complex128
+
+Here is the culprit: Case Sensitivity.
+
+Your Code Expected: 'adc_data' (snake_case)
+
+The File Contains: 'adcData' (camelCase)
+
+

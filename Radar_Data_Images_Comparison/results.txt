@@ -1,0 +1,108 @@
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Radar_Data_Images_Comparison/compare_models.py
+--- Loading Independent Models ---
+Scanning dataset for paired Image+Radar files...
+Fusion Dataset Ready. Found 16940 valid pairs.
+Loading Image Model from custom_scratch_model.pth...
+c:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison\compare_models.py:43: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model_img.load_state_dict(torch.load(IMAGE_MODEL_PATH, map_location=DEVICE))
+Loading Radar Model from best_radar_model.pth...
+c:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison\compare_models.py:53: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model_rad.load_state_dict(torch.load(RADAR_MODEL_PATH, map_location=DEVICE))
+
+--- STARTING COMPARISON (Press Ctrl+C to stop) ---
+TYPE       | IMAGE PRED           | RADAR PRED           | AGREEMENT?
+---------------------------------------------------------------------------
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Car (100%)    | ❌ DISAGREE
+
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Radar_Data_Images_Comparison/compare_models.py
+--- Loading Independent Models ---
+Scanning dataset for paired Image+Radar files...
+Fusion Dataset Ready. Found 16940 valid pairs.
+Loading Image Model from custom_scratch_model.pth...
+c:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison\compare_models.py:43: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model_img.load_state_dict(torch.load(IMAGE_MODEL_PATH, map_location=DEVICE))
+Loading Radar Model from best_radar_model.pth...
+c:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison\compare_models.py:53: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  model_rad.load_state_dict(torch.load(RADAR_MODEL_PATH, map_location=DEVICE))
+
+--- STARTING COMPARISON (Press Ctrl+C to stop) ---
+TYPE       | IMAGE PRED           | RADAR PRED           | AGREEMENT?
+---------------------------------------------------------------------------
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Cyclist | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Cyclist (77%)    | ❌ DISAGREE
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Cyclist | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Cyclist (100%)    | ✅ YES
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+GT: Cyclist | Img: Cyclist (93%)    | Rad: Cyclist (100%)    | ✅ YES
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ YES
+
+
+
+PS C:\Users\karel\Desktop\ML-Thesis\Code\Radar_Data_Images_Comparison> & C:\Users\karel\AppData\Local\Programs\Python\Python312\python.exe c:/Users/karel/Desktop/ML-Thesis/Code/Radar_Data_Images_Comparison/compare_models.py
+--- Loading Independent Models ---
+Scanning dataset for paired Image+Radar files...
+Fusion Dataset Ready. Found 16940 valid pairs.
+Loading Image Model from custom_scratch_model.pth...
+Loading Radar Model from best_radar_model.pth...
+
+--- STARTING COMPARISON (Press Ctrl+C to stop) ---
+TYPE       | IMAGE PRED           | RADAR PRED           | AGREEMENT?
+---------------------------------------------------------------------------
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Cyclist (100%)    | ✅ Both Correct
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ Both Correct
+GT: Cyclist | Img: Car (100%)    | Rad: Car (100%)    | ⚠️ Shared Error
+GT: Person | Img: Cyclist (70%)    | Rad: Person (100%)    | 📡 Rad Wins
+GT: Cyclist | Img: Cyclist (70%)    | Rad: Cyclist (100%)    | ✅ Both Correct
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Cyclist (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Cyclist | Img: Cyclist (97%)    | Rad: Cyclist (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Cyclist (70%)    | Rad: Car (100%)    | ❌ Total Failure
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ Both Correct
+GT: Cyclist | Img: Cyclist (100%)    | Rad: Cyclist (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Person | Img: Person (100%)    | Rad: Person (100%)    | ✅ Both Correct
+GT: Car    | Img: Car (100%)    | Rad: Car (100%)    | ✅ Both Correct
+GT: Person | Img: Person (99%)    | Rad: Person (100%)    | ✅ Both Correct

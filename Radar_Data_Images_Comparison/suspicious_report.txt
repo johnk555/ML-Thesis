@@ -1,0 +1,40 @@
+================================================================================
+SUSPICIOUS SAMPLES (Low Confidence Despite Correct Prediction)
+================================================================================
+Total Suspicious: 31
+These samples might have labeling issues or ambiguous features.
+
+--------------------------------------------------------------------------------
+Filename                                 | Truth      | Img Conf   | Rad Conf  
+--------------------------------------------------------------------------------
+Sample_10287                             | Cyclist    | 77.90%     | 76.19%    
+Sample_10353                             | Cyclist    | 81.57%     | 54.80%    
+Sample_12745                             | Cyclist    | 93.22%     | 65.43%    
+Sample_13205                             | Cyclist    | 92.75%     | 79.99%    
+Sample_13216                             | Cyclist    | 93.07%     | 73.13%    
+Sample_15090                             | Cyclist    | 99.99%     | 77.81%    
+Sample_15098                             | Cyclist    | 99.99%     | 54.58%    
+Sample_15099                             | Cyclist    | 99.99%     | 78.18%    
+Sample_15109                             | Cyclist    | 99.99%     | 56.77%    
+Sample_15111                             | Cyclist    | 99.99%     | 66.67%    
+Sample_15115                             | Cyclist    | 99.99%     | 72.62%    
+Sample_15116                             | Cyclist    | 99.99%     | 76.79%    
+Sample_15121                             | Cyclist    | 99.99%     | 62.09%    
+Sample_15123                             | Cyclist    | 99.99%     | 72.20%    
+Sample_15129                             | Cyclist    | 99.99%     | 69.66%    
+Sample_15143                             | Cyclist    | 99.99%     | 70.76%    
+Sample_15144                             | Cyclist    | 99.99%     | 69.29%    
+Sample_15146                             | Cyclist    | 99.99%     | 63.53%    
+Sample_15186                             | Cyclist    | 99.98%     | 76.44%    
+Sample_15187                             | Cyclist    | 99.98%     | 53.38%    
+Sample_15190                             | Cyclist    | 99.99%     | 62.26%    
+Sample_15192                             | Cyclist    | 99.99%     | 79.84%    
+Sample_15196                             | Cyclist    | 99.98%     | 64.11%    
+Sample_15197                             | Cyclist    | 99.98%     | 79.30%    
+Sample_15198                             | Cyclist    | 99.98%     | 62.01%    
+Sample_15207                             | Cyclist    | 99.98%     | 77.43%    
+Sample_15208                             | Cyclist    | 99.98%     | 79.88%    
+Sample_15209                             | Cyclist    | 99.98%     | 77.13%    
+Sample_15212                             | Cyclist    | 99.98%     | 69.66%    
+Sample_15216                             | Cyclist    | 99.98%     | 68.97%    
+Sample_16853                             | Cyclist    | 99.97%     | 64.18%    
